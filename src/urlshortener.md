@@ -2,59 +2,14 @@
 # Design a url shortener like bit.ly
 # Service to allow users to create short urls so that they are easy to share with end users.
 
-## 1. Problem Formulation 
-Increase revenue (through lead generation) by recommending homes to users
+## 1. Requirements 
 
-Some existing data examples:  
-* Games data
+### Functional (Product functionality/PRD type) requirements
+- User should be able to generate a short url, given a long url.
+- The short code for url must be unique
 
-  * app_id,
-   title,
-   date_release,
-   win,
-   mac,
-   linux,
-   rating,
-   positive_ratio,
-   user_reviews,
-   price_final,
-   price_original,
-   discount,
-   steam_deck,
+### Non - Functional (Product functionality/PRD type) requirements
 
-* User historic data 
-   
-  *  user_id,
-   products,
-   reviews,
-
-
-* Recommendations data 
-  
-  * app_id,
-  helpful,
-  funny,
-  date,
-  is_recommended,
-  hours,
-  user_id,
-  review_id,
-  
-* Reviews 
-
-
-* Example Open Source Data: [Steam games complete dataset](https://www.kaggle.com/datasets/trolukovich/steam-games-complete-dataset) ([CF and content based github](https://github.com/AudreyGermain/Game-Recommendation-System))
-  * Game fatures include:  
-Url, 
-types
-name,
-desc_snippet,
-recent_reviews,
-all_reviews,
-release_date,
-developer,
-publisher,
-popular_tag,
 
 ### Clarifying questions 
 - Use case? Homepage?
