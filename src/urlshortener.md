@@ -6,7 +6,10 @@
 
 ### Functional (Product functionality/PRD type) requirements
 - User should be able to generate a short url, given a long url.
-- The short code for url must be unique
+- User should be redirected to the long url, when navigating to the short url produced by the service.
+
+- Below the line:
+    These are usually cross-cutting concerns not core to the system. These could be anything like new user registration/login, data analytics for this service to help an admin understand the product usage(clicks, geo location of users etc)
 
 ### Non - Functional (Product functionality/PRD type) requirements
 
