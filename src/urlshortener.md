@@ -1,6 +1,6 @@
 
-# Design a home recommendation engine 
-# You May Also Like: Show 3 recommended homes when a user submits lead for a home
+# Design a url shortener like bit.ly
+# Service to allow users to create short urls so that they are easy to share with end users.
 
 ## 1. Problem Formulation 
 Increase revenue (through lead generation) by recommending homes to users
