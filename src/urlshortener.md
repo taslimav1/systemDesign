@@ -9,28 +9,20 @@
 - User should be redirected to the long url, when navigating to the short url produced by the service.
 
 - Below the line:
-    These are usually cross-cutting concerns not core to the system. These could be anything like new user registration/login, data analytics for this service to help an admin understand the product usage(clicks, geo location of users etc)
+    These are usually cross-cutting concerns not core to the system. These could be anything like new user registration/login, data analytics for this service to help an admin understand the product usage(clicks, geo location of users etc), monitoring and observability etc.
 
-### Non - Functional (Product functionality/PRD type) requirements
+### Non - Functional (Technical/system scale type) requirements
+- Number of core entity (urls) that need to be generated a day
+- Number of DAU(Daily active users)
+      The above questions should help you understand whether the system needs to be highly scalable and distributed.
 
 
 ### Clarifying questions 
-- Use case? Homepage?
-  - Does user sends a text query as well?
-- Business objective? 
-  - Increase user engagement (play, like, click, share), purchase?, create a better ultimate gaming experience 
-- Similar to previously played, or personalized for the user? Personalized for the user
-- User locations? Worldwide (multiple languages) 
-- User’s age group: 
-- Do users have any favorite lists, play later, etc?
-- How many games? 100 million
-- How many users? 100 million DAU
-- Latency requirements  - 200msec?
-- Data access 
-  - Do we log and have access to any data? Can we build a dataset using user interactions ?
-  - Do we have textual description of items? 
-- can users become friends on the platform and do we wanna take that into account?
-- Free or Paid?  
+- Different architecture styles are suited for different scales a system needs to support.
+- e.g. There's no need to go for a microservice architecture if the DAU is 100. You could just design a monolith.
+- System is read heavy vs write heavy.
+- System needs async processing - realtime, streaming, batch? Or does it need sync architecture.
+- Best data store for the usecase - e.g. Transactional system not needing a lot of scaling support can just be designed with a relational datastore, full text search usecases might benefit from Elasticsearch etc.
 
 
 
